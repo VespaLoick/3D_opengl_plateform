@@ -33,7 +33,7 @@ float LeSol::GetHauteur(float coorx, float coory)
 	{
 		return SolPhysique[tab_value]+2.0f;
 	}
-	return 1.0f;
+	return -1000.0f;
 }
 
 void LeSol::RenduDuSol(GLuint& matrice_id, glm::mat4 CamPos , glm::mat4 projection)

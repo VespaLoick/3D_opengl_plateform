@@ -36,9 +36,9 @@ private:
 	glm::vec3 m_pos, m_dir, m_axerot , m_direction ,  m_Protagonsit_pos;
 	glm::mat4 m_vue;
 
-	float saut;
+	float vitesse_vertical;
 	float force_saut = 5;
-	float vitesse_chute = -5;
+	float vitesse_terminal = -5;
 	float Gravity = 9.8;
 	float hitbox = 0.4;
 

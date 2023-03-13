@@ -61,7 +61,7 @@ void LaCamera::Bouge(GLFWwindow* fenetre , std::vector<float>& tabSol , Model& P
 	);
 
 
-	m_pos += glm::vec3(0, diftemps*saut, 0);//gravity lineaire
+	m_pos += glm::vec3(0, diftemps*vitesse_vertical, 0);//gravity lineaire
 	
 
 	//saut
@@ -69,18 +69,18 @@ void LaCamera::Bouge(GLFWwindow* fenetre , std::vector<float>& tabSol , Model& P
 	{
 		if (m_pos.y <= Platform.GetHauteur(m_pos.z, m_pos.x)+0.01 )
 		{
-			saut = force_saut;
+			vitesse_vertical = force_saut;
 		}	
 	}
-	if (saut > vitesse_chute) //chute
+	if (vitesse_vertical > vitesse_terminal) //chute
 	{
-		saut -= diftemps*Gravity;
+		vitesse_vertical -= diftemps*Gravity;
 	}	
 	//correction si encré dans le sol
 	if (m_pos.y < Platform.GetHauteur(m_pos.z, m_pos.x) )
 	{
 		m_pos = glm::vec3(m_pos.x, Platform.GetHauteur(m_pos.z, m_pos.x) , m_pos.z);
-		saut = 0;
+		vitesse_vertical = 0;
 	}
 
 	glm::vec3 next_position;
