@@ -1,0 +1,13 @@
+﻿  ChargeurDObjet.cpp
+F:\ynov\proget_platform_opengl\proget_vscode\ChargeurDObjet.cpp(7,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'glm.hpp' : No such file or directory
+  laCamera.cpp
+F:\ynov\proget_platform_opengl\proget_vscode\laCamera.h(10,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'glew.h' : No such file or directory
+  LeSol.cpp
+F:\ynov\proget_platform_opengl\proget_vscode\Model.h(10,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'glew.h' : No such file or directory
+  main.cpp
+F:\ynov\proget_platform_opengl\proget_vscode\main.cpp(10,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'glew.h' : No such file or directory
+  Model.cpp
+F:\ynov\proget_platform_opengl\proget_vscode\Model.h(10,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'glew.h' : No such file or directory
+  objectLoader.cpp
+F:\ynov\proget_platform_opengl\proget_vscode\objectLoader.cpp(7,10): fatal  error C1083: Impossible d'ouvrir le fichier include : 'glm.hpp' : No such file or directory
+  shadeur.cpp
